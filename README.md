@@ -19,6 +19,12 @@ test.addCommand("hello", Example::hello); //add commands (hello is a static meth
 test.addCommand("param", Example::param);
 ```
 
+the terminal inherit the java Thread class so you can lanch the App like a thread
+
+```java
+test.start();
+```
+
 commands recieve 3 parametters : 
 1. the full command line with the command name and all the potential parameter of the commands
 2. the Scanner instance of the TerminalApp in case more informations are needed from the user
